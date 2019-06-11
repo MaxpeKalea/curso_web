@@ -1,24 +1,68 @@
-body {
+/*Este comentario se compila*/
+//Este no
+
+///////////VARIABLES//////////////
+
+$color-fondo: brown;  //las variables no se compilan
+$color-ppal: bisque;
+$margen-base: 1rem;
+
+@mixin sin-margenes-verticales {
+    margin-top: 0; 
+    margin-bottom: 0;   
+}
+@mixin colores-invertidos($claro: 2, $oscuro:2) {
+    background-color: lighten($color: $color-ppal, $amount: $claro); 
+    color: darken($color: $color-fondo, $amount: $oscuro);
+}
+
+/////////////BODY/////////////////
+
+body { 
     margin: 0;
-}
-
-.main-header {
-    background-color: brown;
-    color: bisque;
-    display: flex;
-    justify-content: center;
-    text-align: center;  
-    h1 {
-        margin-top: 0;
-        margin-bottom: 0;
+    display: grid;
+    grid-template-rows: 2fr auto auto 1fr; 
+    >header { 
+        background-color: $color-fondo; //con poner $ se me ofrecen las variables que haya asignado
+        color: $color-ppal; 
+        display: flex; 
+        justify-content: center;
+        align-items: center;  
+        text-align: center; 
+        h1 { 
+            @include sin-margenes-verticales();
+            padding-top: 2rem;
+            padding-bottom: 2rem; 
+        } 
     }
-}
- 
-section {
-    margin: 2.6rem;
-    header {
-        background-color: bisque;
-        color:brown;
-    }    
-}
+    >footer {
+        @extend header; //copia los estilos del header
+        // background-color: brown; 
+        // color: bisque; 
+        // display: flex; 
+        // justify-content: center;
+        // align-items: center; 
+        // text-align: center; 
+    }
+} 
+main {
+    min-height: 60vh;
+    section.intro { 
+        margin: 2.6rem; 
+        header { 
+            @include colores-invertidos()
+        } 
+        article {
+            justify-content: center; //comprobar diferencia entre esto y text align center
+        }     
+    } 
+    section.sample {
+        margin: 2.6rem;
+        header { 
+            @include colores-invertidos()
+        }  
+    }
 
+}
+   
+@import './parrafo.scss';
