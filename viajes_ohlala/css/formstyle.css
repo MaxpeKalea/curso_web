@@ -1,0 +1,36 @@
+.main_header_form {
+    
+    background-color: #151E3F; 
+    ;
+    color: #D7DDF2;
+    ;
+    /* min-height: 10vh; */
+    padding: 0.8rem 0rem 1.2rem 1rem;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.main_header_form p {
+    font-size: 1.33rem;
+    font-weight: bold;
+    margin-top: -1rem;
+    margin-bottom: 0;
+} 
+
+.icono {
+    max-width: 5%;
+}
+
+.footer {
+    background-color: #151E3F; 
+    ;
+    color: #D7DDF2;
+    ;
+    /* min-height: 10vh; */
+    padding: 0.8rem 0rem 1.2rem 1rem;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+

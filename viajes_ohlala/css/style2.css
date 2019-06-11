@@ -1,0 +1,24 @@
+
+.main_header {
+    min-height: 100vh;
+    /* background-color: #151E3F;  */
+    color: #151E3F;
+    background-image: url(../assets/parisfondo.jpg);
+    background-size: cover;
+    background-blend-mode: difference; 
+    padding: 0.8rem 0rem 1.2rem 1rem;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.main_header p {
+    font-size: 1.33rem;
+    font-weight: bold;
+    margin-top: -1rem;
+    margin-bottom: 0;
+} 
+
+.icono {
+    max-width: 5%;
+}
