@@ -1,0 +1,16 @@
+
+$theme-colors: (
+    "letra": rgb(255, 49, 83),
+    "fondo": rgb(240, 240, 240)
+);
+
+// $font-family-sans-sherif: {
+
+// };
+
+.main_footer {
+    min-height: 10vh;
+};
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

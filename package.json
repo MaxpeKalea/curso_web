@@ -4,7 +4,8 @@
   "description": "Solo son mis primeros ejercicios para un curso de desarrollo web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/:css/"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,6 @@
     "dialog-polyfill": "^0.5.0",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
-    "popper.js": "^1.14.7"
+    "popper.js": "^1.15.0"
   }
 }
