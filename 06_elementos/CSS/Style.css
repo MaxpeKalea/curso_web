@@ -45,7 +45,9 @@ ESTILOS del BODY
 .menu {
     background-color: rgb(186, 244, 254);
     color: rgb(66, 66, 66);
-    margin: unset}
+    margin: unset;
+    
+}
 
 nav {
     margin-left: -1rem;
