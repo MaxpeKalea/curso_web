@@ -47,6 +47,8 @@ ESTILOS del BODY
     color: rgb(66, 66, 66);
     margin: unset;
     
+    
+    
 }
 
 nav {
@@ -55,6 +57,7 @@ nav {
     background-color: rgb(127, 235, 255);
     color: rgb(66, 66, 66);
     margin: auto;
+    
 }
 
 nav ul {
@@ -416,4 +419,8 @@ form {
 
 ol, ul {
     list-style: none;
+}
+
+.fixed {
+    position: fixed;
 }
