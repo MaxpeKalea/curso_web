@@ -1,3 +1,49 @@
+/*////////////////////////////////////////////        
+////////////////GLOVALES//////////////////////
+////////////////////////////////////////////*/
+
+body {
+    margin:0;
+    background-color: seashell;
+    /* font-family: "Homer Simpson", cursive; */
+    font-size: large;
+    font-family: 'Cinzel', serif;
+}
+
+h2 {
+    background-image:linear-gradient(90deg,red 33%, white 33%, white 66.66%, blue 66.66%);
+    margin: 1rem;
+    text-align: center;
+}
+
+h3 {
+    background-color:  white ;
+    text-align: center;
+    
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.margin {
+    margin: 2rem;  /*usado para la letra pequeña*/
+}
+
+.sub {
+    text-decoration-line: underline
+}
+
+.negrita {
+    font-weight: bold
+}
+
+/*cada cover será una página*/
+
+/*////////////////////////////////////////////        
+////////////////PÁGINA 1//////////////////////
+////////////////////////////////////////////*/
+
 
 .main_header {
     min-height: 100vh;
@@ -21,4 +67,205 @@
 
 .icono {
     max-width: 5%;
+}
+
+/* ///////////////avión/////////////// */
+
+
+
+#contenedor{
+    width: 280px;
+    margin: 0 auto;
+    padding-top:150px;
+    padding-bottom: 120px;
+   }
+
+
+
+   #contenedor-imagen img {
+    border: none;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+  
+   }
+
+
+   #contenedor-imagen img:hover {
+    -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+   }
+
+/*////////////////////////////////////////////        
+////////////////PÁGINA 2//////////////////////
+////////////////////////////////////////////*/
+
+
+nav {
+    text-decoration: none;
+    background-color: rgb(186, 244, 254);
+    color: rgb(0, 7, 37);
+    font-weight: bold;
+    padding: 2rem;
+}
+nav a {
+    color: inherit;
+    text-decoration: none
+}
+
+/* 
+.menu {
+    background-color:#D7DDF2;
+    color: #151E3F;
+    margin: 0.1rem;
+}
+
+nav {
+    margin-left: -1rem;
+    padding: 0;
+    
+    color: rgb(66, 66, 66);
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+nav a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    /* padding: 1rem; */
+
+ /* } 
+
+
+.p1 {
+    background-color:#D7DDF2;
+    color: #151E3F;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center
+    
+}
+
+*/
+
+
+
+
+
+
+
+
+/*////////////imágenes/////////////*/
+
+img {
+    max-width: 100%;
+}
+
+.image_wrapper_50 {
+    width: 51%
+}
+
+.image_wrapper_25 {
+    width: 25%
+}
+
+.image_wrapper_75 {
+    width: 75%
+}
+
+.section_images img{
+    
+    max-width: 23%;
+    display: block;
+    float: left;
+    text-align: center;
+}
+.section_images img:first-of-type{
+padding-left: 2rem;
+}
+.section_images img:last-of-type{
+    padding-right: 2rem;
+    }
+.section_images img:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.centrar-item {
+    align-items: center;
+}
+
+.borde-foto {
+    border-color: white;
+    border-radius: 0.25rem;
+    border-image-width: 0.2rem;
+}
+
+/* .content-wrapper section:nth-of-type(1) {
+    background-image: url(../assets/parisfondo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content-wrapper section:nth-of-type(2) {
+    background-image: url(../assets/parisfondo3.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content-wrapper section:nth-of-type(5) {
+    background-image: url(../assets/parisfondo4.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+
+/*////////////footer/////////////*/
+
+.footer {
+    background-color: #151E3F; 
+    ;
+    color: #D7DDF2;
+    ;
+    /* min-height: 10vh; */
+    padding: 0.8rem 0rem 1.2rem 1rem;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+/*////////////////////////////////////////////        
+////////////////FORMULARIO//////////////////////
+////////////////////////////////////////////*/
+
+/*////////////imágenes de fondo/////////////*/
+
+.f_nombre {
+    background-image: url("imagenes/fondo.png");  /*billete avión en blanco*/
+}
+
+.f_email {
+    background-image: url("imagenes/fondo.png");  
+}
+
+.f_info {
+    background-image: url("imagenes/fondo.png");
 }
