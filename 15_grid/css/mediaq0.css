@@ -25,7 +25,7 @@
     }
     
     .main_header {
-        margin-top: 250px;
+        margin-top: 200px;
         color: #151E3F;
         font-size: large;
         padding: auto;
@@ -52,7 +52,7 @@
     
     
     #contenedor{
-        margin-top: 30%;
+        margin-top: 60px;
         width: 150px;
         margin-right: auto;
         padding-bottom: 0;
@@ -72,7 +72,7 @@
        }
     
        #contenedor-imagen img:hover {
-        transform: rotate(-40deg) translate(10rem);
+        transform: rotate(-40deg) translate(50rem);
        }
     
     /* ///////////////menú/////////////// */
