@@ -25,7 +25,6 @@
     }
     
     .main_header {
-        /* margin-top: 200px; */
         color: #151E3F;
         font-size: large;
         padding: auto;
@@ -34,7 +33,7 @@
     
     }
     .h1mq500{
-        margin-top:40%;
+        margin-top:60%;
     }
     
     .main_header p {
@@ -56,7 +55,7 @@
     
     #contenedor{
         margin-top: 60px;
-        width: 150px;
+        width: 200px;
         margin-right: auto;
         padding-bottom: 0;
        }
@@ -64,7 +63,7 @@
        #contenedor-imagen img {
            margin: auto;
            /* margin-left: 3rem; */
-           width: 150px;
+           width: 200px;
            margin-right: auto;
            padding-bottom: auto;
         border: none;
@@ -94,7 +93,7 @@
     nav ul {
         display: grid;
         grid-template-columns: repeat(2,100px);
-        grid-column-gap: 3rem;
+        grid-column-gap: 2rem;
         justify-content: center;
         list-style-type: none;
         margin: 0;
