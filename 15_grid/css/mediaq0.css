@@ -25,7 +25,7 @@
     }
     
     .main_header {
-        
+        margin-top: 40%;
         color: #151E3F;
         font-size: x-large;
         padding: auto;
@@ -52,7 +52,7 @@
     
     
     #contenedor{
-        width: 80px;
+        width: 100px;
         margin-right: 2rem;
         padding-bottom: 0;
        }
@@ -60,7 +60,7 @@
        #contenedor-imagen img {
            margin: auto;
            /* margin-left: 3rem; */
-           width: 80px;
+           width: 100px;
            margin-right: auto;
            padding-bottom: auto;
         border: none;
