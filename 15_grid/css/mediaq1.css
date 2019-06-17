@@ -1,0 +1,270 @@
+/*///////////////////////////////////
+////////////////////////////////////////////
+/////////////500//////////////////////////
+///////////////////////////////////////
+////////////////////////////////////*/
+
+
+@media screen and (max-width: 500px) {
+
+    html{
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+    
+    body {
+        margin:0;
+    }
+
+
+main {
+    background-image: url(../assets/fondo2.jpg);
+    background-size: cover;
+    background-blend-mode: difference; 
+    font-family: 'Quicksand', sans-serif;  
+text-align: left;
+color: #151E3F;
+}
+
+article { 
+    margin: 14rem;
+}
+
+h2 {
+    margin-top: 0;
+    background-image:linear-gradient(90deg,rgba(255, 0, 0, 0.507) 33%, white 33%, white 66.66%, rgba(0, 0, 255, 0.459) 66.66%);
+    text-align: center;
+    font-family: 'cinzel';
+    margin-bottom: 13rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    margin: 3rem;
+    text-decoration-style: cursive;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.margin {
+    margin: 2rem;  /*usado para la letra pequeña*/
+}
+
+.sub {
+    text-decoration-line: underline
+}
+
+.negrita {
+    font-weight: bold
+}
+
+
+.main_header {
+    
+    background-image: url(../assets/fondo1.jpg);
+    background-size: cover;
+    color: #151E3F;
+    font-size: large;
+    padding: auto;
+    text-align: right;
+    font-family: 'Cinzel', serif;
+
+}
+
+.main_header p {
+    font-size: small;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+
+.icono {
+    max-width: 5%;
+}
+.mb1 {
+    margin-bottom: 1rem;
+}
+
+/* ///////////////menú/////////////// */
+.logo {
+    max-width: 20%;
+    
+}
+
+.fixed {
+    position: fixed;
+}
+
+nav {
+    background-color:rgba(215, 221, 242, 0.5);
+    color: rgb(66, 66, 66);
+    margin: 3rem 0 2rem 0;
+    font-family: 'cinzel';
+    font-weight: bold;
+    padding: 1rem;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(8,200px);
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+nav a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+ } 
+ nav > ul a:focus,
+ nav > ul a:hover {
+     background-color: #151E3F;
+     color:#D7DDF2;
+ }
+
+ li ul { 
+    display: none;   
+}
+li:hover > ul { 
+    display: initial;
+  
+}
+
+li ul a {
+    margin-top: 0.5rem;
+    font-family:  'Quicksand', sans-serif; 
+}
+
+
+/*////////////tabla/////////////*/
+
+
+ .main_table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+
+tr:nth-of-type(even) td {
+    background-color: rgb(230, 218, 210);
+}
+
+
+tr:nth-of-type(odd) td {
+    background-color: rgb(207, 207, 207);
+}
+
+
+/*////////////imágenes/////////////*/
+.imagenes {
+    align-items: center;
+    margin: 0 17%;
+}
+
+.imagenes img {
+    padding: 2%;
+   max-width: 300px;
+   width: 100%;
+    border-radius: 7%;
+}
+
+.imagenes img:hover{
+    transform: scale(2)
+}
+/*////////////video/////////////*/
+
+.youtube {
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+}
+
+/*////////////contacto/////////////*/
+
+.form fieldset{
+    text-align: center;
+    align-content: center;
+    border: none;
+    margin-top: 4rem;
+    font-size: medium;
+}
+.form legend {
+    margin-bottom: 4rem;
+    font-size: x-large;
+    font-style: bold;
+}
+.form input {
+    display: block;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 4rem;
+
+}
+.form button {
+    margin: 7rem 0rem 0rem 0rem;
+}
+.form option {
+    display: block;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.form select {
+    display: block;
+    width: 100%;
+    border: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 4rem;
+}
+
+.form .f_info {
+    padding-bottom: 15rem;
+}
+
+.form .f_cumple {
+    max-width: 30%;
+    margin-left: 35%;
+}
+.cond {
+    margin:6rem;
+    border: none;
+}
+
+/*///////////flecha inicio//////////*/
+
+.footer_inicio {
+    background-image:linear-gradient(90deg,rgba(255, 0, 0, 0.507) 33%, white 33%, white 66.66%, rgba(0, 0, 255, 0.459) 66.66%);
+}
+
+
+
+/*////////////footer/////////////*/
+
+.footer {
+    background-image: url(../assets/fondo1.jpg);
+    background-position: bottom;
+    background-size: 100%;
+    padding: 5rem;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif; 
+    color: #151E3F; 
+}
+.footer a {
+    margin-top: 4rem;
+}
+
+
+}
