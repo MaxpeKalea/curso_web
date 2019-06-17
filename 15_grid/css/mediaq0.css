@@ -13,19 +13,22 @@
     }
     
     body {
-        margin:0;
+        margin: 0 auto;
+        width:90%;
     }
 
 
     .fondo {
-        min-height: 20vh;
+        margin: 0 auto;
+        width:90%;
         background-image: url(../assets/parisfondo.jpg);
         background-size: cover;
         background-blend-mode: difference; 
     }
     
     .main_header {
-       ¡
+        margin: 0 auto;
+        width:30%;
         color: #151E3F;
         font-size: medium;
         /* padding: 7rem 0rem 1.2rem 1rem; */
@@ -37,8 +40,8 @@
     .main_header p {
         font-size: small;
         font-weight: bold;
-        margin-top: -1rem;
-        margin-bottom: 0;
+        margin: 0 auto;
+        width:10%;
     } 
     
     .icono {
