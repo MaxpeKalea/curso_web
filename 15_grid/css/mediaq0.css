@@ -91,7 +91,7 @@
     nav ul {
         display: grid;
         grid-template-columns: repeat(2,100px);
-        grid-column-gap: 2rem;
+        grid-column-gap: 3rem;
         justify-content: center;
         list-style-type: none;
         margin: 0;
