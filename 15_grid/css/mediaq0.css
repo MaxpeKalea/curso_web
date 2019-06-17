@@ -27,7 +27,7 @@
     .main_header {
         margin-top: 40%;
         color: #151E3F;
-        font-size: x-large;
+        font-size: large;
         padding: auto;
         text-align: center;
         font-family: 'Cinzel', serif;
@@ -35,7 +35,7 @@
     }
     
     .main_header p {
-        font-size: medium;
+        font-size: small;
         font-weight: bold;
         margin-top: -1rem;
         margin-bottom: 0;
