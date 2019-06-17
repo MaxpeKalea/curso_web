@@ -18,7 +18,6 @@
 
   
     .fondo {
-        /* min-height: 100vh; */
         background-image: url(../assets/parisfondo.jpg);
         background-size: cover;
         background-blend-mode: difference; 
@@ -33,13 +32,12 @@
     
     }
     .h1mq500{
-        margin-top:60%;
+        margin-top:50%;
     }
     
     .main_header p {
         font-size: small;
         font-weight: bold;
-        /* margin-top: -1rem; */
         margin-bottom: auto;
     } 
     
