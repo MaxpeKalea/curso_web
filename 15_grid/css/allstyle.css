@@ -1,0 +1,55 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    margin:0;
+    font-size: large; 
+}
+main {
+    background-image: url(../assets/fondo2.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-blend-mode: difference; 
+    font-family: 'Quicksand', sans-serif;  
+text-align: left;
+color: #151E3F;
+}
+
+article { 
+    margin: 14rem;
+}
+
+h2 {
+    margin-top: 0;
+    background-image:linear-gradient(90deg,rgba(255, 0, 0, 0.507) 33%, white 33%, white 66.66%, rgba(0, 0, 255, 0.459) 66.66%);
+    text-align: center;
+    font-family: 'cinzel';
+    margin-bottom: 13rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    margin: 3rem;
+    text-decoration-style: cursive;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.margin {
+    margin: 2rem;  /*usado para la letra pequeña*/
+}
+
+.sub {
+    text-decoration-line: underline
+}
+
+.negrita {
+    font-weight: bold
+}

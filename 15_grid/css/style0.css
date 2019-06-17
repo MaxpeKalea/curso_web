@@ -1,0 +1,98 @@
+/*////////////////////////////////////////////        
+////////////////INDICE//////////////////////
+////////////////////////////////////////////*/
+
+.fondo {
+    min-height: 100vh;
+    background-image: url(../assets/parisfondo.jpg);
+    background-size: cover;
+    background-blend-mode: difference; 
+}
+
+.main_header {
+    
+    /* background-color: #151E3F;  */
+    color: #151E3F;
+    font-size: x-large;
+    padding: 7rem 0rem 1.2rem 1rem;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+
+}
+
+.main_header p {
+    font-size: medium;
+    font-weight: bold;
+    margin-top: -1rem;
+    margin-bottom: 0;
+} 
+
+.icono {
+    max-width: 5%;
+}
+
+
+
+/* ///////////////avión/////////////// */
+
+
+
+#contenedor{
+    width: 350px;
+    margin-right: 2rem;
+    padding-bottom: 0;
+   }
+
+   #contenedor-imagen img {
+       margin-top: 4rem;
+       margin-left: 3rem;
+       width: 350px;
+       margin-right: 45rem;
+       padding-bottom: 0;
+    border: none;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+  
+   }
+
+   #contenedor-imagen img:hover {
+    transform: rotate(-40deg) translate(60rem);
+   }
+
+/* ///////////////menú/////////////// */
+
+
+nav {
+    background-color:#D7DDF2;
+    padding: 0;
+    color: rgb(66, 66, 66);
+    margin: 2rem 0;
+    font-family: 'cinzel';
+    font-weight: bold;
+    padding: 1rem;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+nav a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+ } 
+ nav > ul a:focus,
+ nav > ul a:hover {
+     background-color: #151E3F;
+     color:#D7DDF2;
+ }
