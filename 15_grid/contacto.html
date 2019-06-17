@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -38,15 +38,22 @@
         <form action="https://jsonplaceholder.typicode.com/users" name="complete-POST" method="POST">
             <fieldset>
                 <legend class="centrar form_title">Datos personales</legend>
-                <label for="userName" class="form_label">Nombre y apellidos</label>
+                <div class="f_nombre">
+                    <label for="userName" class="form_label">Nombre y apellidos</label>
                 <input type="text" name="userName" id="userName" required class="form_control centrar"
                     placeholder="Dime tu nombre y reinarás en un jardín de datos">
-                <label for="userEmail" class="form_label">Email</label>
+                </div>
+                <div class="f_email">
+                  <label for="userEmail" class="form_label">Email</label>
                 <input type="email" name="userEmail" id="userEmail" required class="form_control centrar"
-                    placeholder="Te mandaría mil cartas, pero te escribiré solo cuando quieras">
-                <label for="info" class="form_label">Más información</label>
+                    placeholder="Te mandaría mil cartas, pero te escribiré solo cuando quieras">  
+                </div>
+                <div class="f_info">
+                 <label for="info" class="form_label">Más información</label>
                 <input type="text" name="info" id="info" class="form_control centrar"
-                    placeholder="Cuéntame tus deseos... Serán órdenes para mí">
+                    placeholder="Cuéntame tus deseos... Serán órdenes para mí">   
+                </div>
+                
             </fieldset>
             <datalist id="formacion">
                 <option>Eso</option>
@@ -82,7 +89,7 @@
 
                 <p>Salida desde</p>
                 <!-- id y label for han de ser iguales -->
-                <!-- el name y el value  me los dan el back -->
+                <!-- el name y el value  me los dan el back-->
                 <input type="radio" name="ubi" id="madrid" value="madrid" required>
                 <label for="madrid">Madrid</label>
                 <input type="radio" name="ubi" id="salamanca" value="salamanca">
