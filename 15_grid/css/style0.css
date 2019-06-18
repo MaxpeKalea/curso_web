@@ -8,29 +8,27 @@
     background-size: cover;
     background-blend-mode: difference; 
 }
-
 .main_header {
-    
-    /* background-color: #151E3F;  */
     color: #151E3F;
     font-size: x-large;
-    padding: 7rem 0rem 1.2rem 1rem;
+    padding: auto;
     text-align: center;
     font-family: 'Cinzel', serif;
 
+}
+.h1mq500{
+    margin-top: 180px;
 }
 
 .main_header p {
     font-size: medium;
     font-weight: bold;
-    margin-top: -1rem;
-    margin-bottom: 0;
+    margin-bottom: auto;
 } 
 
 .icono {
     max-width: 5%;
 }
-
 
 
 /* ///////////////avión/////////////// */
@@ -44,7 +42,7 @@
    }
 
    #contenedor-imagen img {
-       margin-top: 4rem;
+       margin-top: 14rem;
        margin-left: 3rem;
        width: 350px;
        margin-right: 45rem;
@@ -57,7 +55,7 @@
    }
 
    #contenedor-imagen img:hover {
-    transform: rotate(-40deg) translate(60rem);
+    transform: rotate(-30deg) translate(100rem);
    }
 
 /* ///////////////menú/////////////// */
@@ -91,8 +89,9 @@ nav a {
     text-decoration: none;
     display: block;
  } 
+
  nav > ul a:focus,
  nav > ul a:hover {
-     background-color: #151E3F;
+     background-color: rgb(21, 30, 63);
      color:#D7DDF2;
  }
