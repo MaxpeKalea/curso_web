@@ -20,14 +20,18 @@
 main {
     background-image: url(../assets/fondo2.jpg);
     background-size: cover;
-    background-blend-mode: difference; 
+    /* background-blend-mode: difference;  */
     font-family: 'Quicksand', sans-serif;  
 text-align: left;
 color: #151E3F;
 }
 
 article { 
-    margin: 14rem;
+    margin: 14rem 3rem;
+}
+h1 {
+    font-size: x-large;
+    padding-top: 3rem;
 }
 
 h2 {
@@ -36,6 +40,7 @@ h2 {
     text-align: center;
     font-family: 'cinzel';
     margin-bottom: 13rem;
+    font-size: large;
 }
 
 h3 {
@@ -84,7 +89,7 @@ h4 {
 } 
 
 .icono {
-    max-width: 5%;
+    max-width: 10%;
 }
 .mb1 {
     margin-bottom: 1rem;
@@ -92,7 +97,7 @@ h4 {
 
 /* ///////////////menú/////////////// */
 .logo {
-    max-width: 20%;
+    max-width: 50%;
     
 }
 
@@ -103,7 +108,7 @@ h4 {
 nav {
     background-color:rgba(215, 221, 242, 0.5);
     color: rgb(66, 66, 66);
-    margin: 3rem 0 2rem 0;
+    margin: 3rem auto 2rem 0;
     font-family: 'cinzel';
     font-weight: bold;
     padding: 1rem;
@@ -111,17 +116,21 @@ nav {
 
 nav ul {
     display: grid;
-    grid-template-columns: repeat(8,200px);
+    grid-template-columns: repeat(4,100px);
     justify-content: center;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     text-align: center;
 }
 
 nav li {
     display: inline-block;
 }
+nav li:last-of-type {
+    padding-left: 2rem;
+}
+
 nav a {
     color: inherit;
     text-decoration: none;
@@ -188,6 +197,11 @@ tr:nth-of-type(odd) td {
 .youtube {
     margin-top: 13rem;
     margin-bottom: 13rem;
+}
+
+.responsive {
+    width: 230px;
+    height: 157px;
 }
 
 /*////////////contacto/////////////*/
@@ -264,7 +278,6 @@ tr:nth-of-type(odd) td {
 }
 .footer a {
     margin-top: 4rem;
+    font-size: small;
 }
 
-
-}
