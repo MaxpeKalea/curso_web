@@ -998,7 +998,7 @@ tr:nth-of-type(odd) td {
 }
 .form input {
     display: block;
-    width: 100%;
+    width: 85%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin: 4rem;
@@ -1282,10 +1282,11 @@ tr:nth-of-type(odd) td {
 }
 .form input {
     display: block;
-    width: 100%;
+    width: 70%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin: 4rem;
+    padding-right: 4rem;
 
 }
 .form button {
