@@ -8,29 +8,27 @@
     background-size: cover;
     background-blend-mode: difference; 
 }
-
 .main_header {
-    
-    /* background-color: #151E3F;  */
     color: #151E3F;
     font-size: x-large;
-    padding: 7rem 0rem 1.2rem 1rem;
+    padding: auto;
     text-align: center;
     font-family: 'Cinzel', serif;
 
 }
+.h1mq500{
+    margin-top: 130px;
+}
 
 .main_header p {
-    font-size: medium;
+    font-size: large;
     font-weight: bold;
-    margin-top: -1rem;
-    margin-bottom: 0;
+    margin-bottom: auto;
 } 
 
 .icono {
     max-width: 5%;
 }
-
 
 
 /* ///////////////avión/////////////// */
@@ -44,7 +42,7 @@
    }
 
    #contenedor-imagen img {
-       margin-top: 4rem;
+       margin-top: 10rem;
        margin-left: 3rem;
        width: 350px;
        margin-right: 45rem;
@@ -57,7 +55,7 @@
    }
 
    #contenedor-imagen img:hover {
-    transform: rotate(-40deg) translate(60rem);
+    transform: rotate(-30deg) translate(100rem);
    }
 
 /* ///////////////menú/////////////// */
@@ -91,8 +89,483 @@ nav a {
     text-decoration: none;
     display: block;
  } 
+
  nav > ul a:focus,
  nav > ul a:hover {
-     background-color: #151E3F;
+     background-color: rgb(21, 30, 63);
      color:#D7DDF2;
  }
+
+ /*///////////////////////////////////
+////////////////////////////////////////////
+/////////////950//////////////////////////
+///////////////////////////////////////
+////////////////////////////////////*/
+
+
+@media screen and (max-width: 950px) {
+
+    html{
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+    
+    body {
+        margin:0;
+    }
+
+  
+    .fondo {
+        background-image: url(../assets/parisfondo.jpg);
+        background-size: cover;
+        background-blend-mode: difference; 
+    }
+    
+    .main_header {
+        color: #151E3F;
+        font-size: x-large;
+        padding: auto;
+        text-align: center;
+        font-family: 'Cinzel', serif;
+    
+    }
+    .h1mq500{
+        margin-top: 180px;
+    }
+    
+    .main_header p {
+        font-size: medium;
+        font-weight: bold;
+        margin-bottom: auto;
+    } 
+    
+    .icono {
+        max-width: 10%;
+    }
+    
+    
+    
+    /* ///////////////avión/////////////// */
+    
+    
+    
+    #contenedor{
+        margin-top: auto;
+        padding: 7rem 1rem;
+        width: 320px;
+        margin-right: auto;
+        padding-bottom: 0;
+       }
+    
+       #contenedor-imagen img {
+           margin: auto;
+         
+           width: 320px;
+           margin-right: auto;
+           padding-bottom: auto;
+        border: none;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+      
+       }
+    
+       #contenedor-imagen img:hover {
+        transform: rotate(-40deg) translate(50rem);
+       }
+    
+    /* ///////////////menú/////////////// */
+    
+    
+    nav {
+        background-color:#D7DDF2;
+        padding: auto;
+        color: rgb(66, 66, 66);
+        margin: auto;
+        font-family: 'cinzel';
+        font-weight: bold;
+        padding: auto;
+    }
+    
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(2,100px);
+        grid-column-gap: 2rem;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    nav li {
+        display: inline-block;
+    }
+    nav a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+     } 
+     nav > ul a:focus,
+     nav > ul a:hover {
+         background-color: #151E3F;
+         color:#D7DDF2;
+     }
+    
+    }
+
+   /*///////////////////////////////////
+////////////////////////////////////////////
+/////////////800//////////////////////////
+///////////////////////////////////////
+////////////////////////////////////*/
+
+
+@media screen and (max-width: 800px) {
+
+    html{
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+    
+    body {
+        margin:0;
+    }
+
+  
+    .fondo {
+        background-image: url(../assets/parisfondo.jpg);
+        background-size: cover;
+        background-blend-mode: difference; 
+    }
+    
+    .main_header {
+        color: #151E3F;
+        font-size: x-large;
+        padding: auto;
+        text-align: center;
+        font-family: 'Cinzel', serif;
+    
+    }
+    .h1mq500{
+        margin-top: 210px;
+    }
+    
+    .main_header p {
+        font-size: medium;
+        font-weight: bold;
+        margin-bottom: auto;
+    } 
+    
+    .icono {
+        max-width: 10%;
+    }
+    
+    
+    
+    /* ///////////////avión/////////////// */
+    
+    
+    
+    #contenedor{
+        margin-top: auto;
+        padding: 6rem 1rem;
+        width: 300px;
+        margin-right: auto;
+        padding-bottom: 0;
+       }
+    
+       #contenedor-imagen img {
+           margin: auto;
+         
+           width: 300px;
+           margin-right: auto;
+           padding-bottom: auto;
+        border: none;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+      
+       }
+    
+       #contenedor-imagen img:hover {
+        transform: rotate(-40deg) translate(50rem);
+       }
+    
+    /* ///////////////menú/////////////// */
+    
+    
+    nav {
+        background-color:#D7DDF2;
+        padding: auto;
+        color: rgb(66, 66, 66);
+        margin: auto;
+        font-family: 'cinzel';
+        font-weight: bold;
+        padding: auto;
+    }
+    
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(2,100px);
+        grid-column-gap: 2rem;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    nav li {
+        display: inline-block;
+    }
+    nav a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+     } 
+     nav > ul a:focus,
+     nav > ul a:hover {
+         background-color: #151E3F;
+         color:#D7DDF2;
+     }
+    
+    }
+    
+/*///////////////////////////////////
+////////////////////////////////////////////
+/////////////650//////////////////////////
+///////////////////////////////////////
+////////////////////////////////////*/
+
+
+@media screen and (max-width: 650px) {
+
+    html{
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+    
+    body {
+        margin:0;
+    }
+
+  
+    .fondo {
+        background-image: url(../assets/parisfondo.jpg);
+        background-size: cover;
+        background-blend-mode: difference; 
+    }
+    
+    .main_header {
+        color: #151E3F;
+        font-size: large;
+        padding: auto;
+        text-align: center;
+        font-family: 'Cinzel', serif;
+    
+    }
+    .h1mq500{
+        margin-top: 300px;
+    }
+    
+    .main_header p {
+        font-size: medium;
+        font-weight: bold;
+        margin-bottom: auto;
+    } 
+    
+    .icono {
+        max-width: 10%;
+    }
+    
+    
+    
+    /* ///////////////avión/////////////// */
+    
+    
+    
+    #contenedor{
+        margin-top: auto;
+        padding: 5rem 1rem;
+        width: 250px;
+        margin-right: auto;
+        padding-bottom: 0;
+       }
+    
+       #contenedor-imagen img {
+           margin: auto;
+           /* margin-left: 3rem; */
+           width: 250px;
+           margin-right: auto;
+           padding-bottom: auto;
+        border: none;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+      
+       }
+    
+       #contenedor-imagen img:hover {
+        transform: rotate(-40deg) translate(50rem);
+       }
+    
+    /* ///////////////menú/////////////// */
+    
+    
+    nav {
+        background-color:#D7DDF2;
+        padding: auto;
+        color: rgb(66, 66, 66);
+        margin: auto;
+        font-family: 'cinzel';
+        font-weight: bold;
+        padding: auto;
+    }
+    
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(2,100px);
+        grid-column-gap: 2rem;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    nav li {
+        display: inline-block;
+    }
+    nav a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+     } 
+     nav > ul a:focus,
+     nav > ul a:hover {
+         background-color: #151E3F;
+         color:#D7DDF2;
+     }
+    
+    }
+    
+
+/*///////////////////////////////////
+////////////////////////////////////////////
+/////////////500//////////////////////////
+///////////////////////////////////////
+////////////////////////////////////*/
+
+
+@media screen and (max-width: 500px) {
+
+    html{
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+    
+    body {
+        margin:0;
+    }
+
+  
+    .fondo {
+        background-image: url(../assets/parisfondo.jpg);
+        background-size: cover;
+        background-blend-mode: difference; 
+    }
+    
+    .main_header {
+        color: #151E3F;
+        font-size: large;
+        padding: auto;
+        text-align: center;
+        font-family: 'Cinzel', serif;
+    
+    }
+    .h1mq500{
+        margin-top: 330px;
+    }
+    
+    .main_header p {
+        font-size: small;
+        font-weight: bold;
+        margin-bottom: auto;
+    } 
+    
+    .icono {
+        max-width: 10%;
+    }
+    
+    
+    
+    /* ///////////////avión/////////////// */
+    
+    
+    
+    #contenedor{
+        margin-top: auto;
+        padding: 4rem 1rem ;
+        width: 220px;
+        margin-right: auto;
+        padding-bottom: 0;
+       }
+    
+       #contenedor-imagen img {
+           margin: auto;
+           /* margin-left: 3rem; */
+           width: 220px;
+           margin-right: auto;
+           padding-bottom: auto;
+        border: none;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+      
+       }
+    
+       #contenedor-imagen img:hover {
+        transform: rotate(-40deg) translate(50rem);
+       }
+    
+    /* ///////////////menú/////////////// */
+    
+    
+    nav {
+        background-color:#D7DDF2;
+        padding: auto;
+        color: rgb(66, 66, 66);
+        margin: auto;
+        font-family: 'cinzel';
+        font-weight: bold;
+        padding: auto;
+    }
+    
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(2,100px);
+        grid-column-gap: 2rem;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    nav li {
+        display: inline-block;
+    }
+    nav a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+     } 
+     nav > ul a:focus,
+     nav > ul a:hover {
+         background-color: #151E3F;
+         color:#D7DDF2;
+     }
+    
+    }
+    

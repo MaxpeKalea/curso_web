@@ -130,17 +130,15 @@
                 
             </article>
     
- <div  class="youtube" align="center">
+ <div  class="youtube centrar">
                 <section>
-                    <div id="muteYouTubeVideoPlayer"></div>
+                    <div class="responsive" id="muteYouTubeVideoPlayer"></div>
                     <script async src="https://www.youtube.com/iframe_api"></script>
                     <script>
                         function onYouTubeIframeAPIReady() {
                             var player;
                             player = new YT.Player('muteYouTubeVideoPlayer', {
                                 videoId: 'AQ-J_TI7TBk', // El ID del video de Youtube
-                                width: 560, // Ancho del reproductor (en px)
-                                height: 315, // Alto del reproductor (en px)
                                 playerVars: {
                                     controls: 1, // Mostrar los botones de pause/play en el reproductor
                                     showinfo: 0, // Esconder el titulo del vídeo

@@ -37,76 +37,76 @@
 
     </header>
     <main>
+        <section>
         <header>
             <h2>CONTACTO</h2>
         </header>
         <article>
-                <div class="form">
-        <form action="https://jsonplaceholder.typicode.com/users" name="complete-POST" method="POST">
+            <div class="form">
+                <form action="https://jsonplaceholder.typicode.com/users" name="complete-POST" method="POST">
+                    <fieldset class="centrar">
+                        <legend class="centrar">Datos personales</legend>
+                        <div class="f_nombre">
+                            <label for="userName">Nombre y apellidos</label>
+                            <input type="text" name="userName" id="userName" required placeholder="">
+                        </div>
+                        <div class="f_email">
+                            <label for="userEmail">Email</label>
+                            <input type="email" name="userEmail" id="userEmail" required placeholder="">
+                        </div>
+                        <label for="birthDate">Fecha de nacimiento</label>
+                        <input type="date" name="birthDate" id="birthDate" class="f_cumple">
+                        <div>
+                            <label for="info" class="fpad">Más información</label>
+                            <input type="text" name="info" id="info" class="f_info" placeholder="">
+                        </div>
+
+                    </fieldset>
+
+
+                    <fieldset class="centrar" id="datos_viaje">
+                        <legend class="centrar">Datos del viaje</legend>
+                        <label for="travelDate" class="form_label">Fecha del viaje</label>
+                        <input type="date" name="travelDate" id="travelDate">
+                        <label for="viaje" class="form_label">Viaje</label>
+                        <select name="viaje" id="viaje" class="form_control" required>
+                            <option value="">Elige un valor</option>
+                            <optgroup label="Epoca Vacacional">
+                                <option value="TI-01">Todo incluído</option>
+                                <option value="B-02">Básico</option>
+                                <option value="P-03">Personalizado</option>
+                            </optgroup>
+                            <optgroup label="Resto del año">
+                                <option value="TI-04">Todo incluído</option>
+                                <option value="B-05">Básico</option>
+                                <option value="P-06">Personalizado</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                </form>
+            </div>
             <fieldset class="centrar">
-                <legend class="centrar">Datos personales</legend>
-                <div class="f_nombre">
-                    <label for="userName">Nombre y apellidos</label>
-                <input type="text" name="userName" id="userName" required
-                    placeholder="">
-                </div>
-                <div class="f_email">
-                  <label for="userEmail">Email</label>
-                <input type="email" name="userEmail" id="userEmail" required
-                    placeholder="">  
-                </div>
-                <label for="birthDate">Fecha de nacimiento</label>
-                <input type="date" name="birthDate" id="birthDate" class="f_cumple">
-                <div>
-                 <label for="info" class="fpad">Más información</label>
-                <input type="text" name="info" id="info"  class="f_info"
-                    placeholder="" >   
-                </div>
-                
+                <p>Salida desde</p>
+               
+                    <input type="radio" name="ubi" id="madrid" value="madrid" required>
+                    <label for="madrid">Madrid</label>
+                    <input type="radio" name="ubi" id="salamanca" value="salamanca">
+                    <label for="salamanca">Salamanca</label>
+                    <input type="radio" name="ubi" id="barna" value="barcelona">
+                    <label for="barna">Barcelona</label>
             </fieldset>
-            
-
-            <fieldset  class="centrar" id="datos_viaje">
-                <legend class="centrar">Datos del viaje</legend>
-                <label for="travelDate" class="form_label">Fecha del viaje</label>
-            <input type="date" name="travelDate" id="travelDate">
-                <label for="viaje" class="form_label">Viaje</label>
-                <select name="viaje" id="viaje" class="form_control" required>
-                    <option value="">Elige un valor</option>
-                    <optgroup label="Epoca Vacacional">
-                        <option value="TI-01">Todo incluído</option>
-                        <option value="B-02">Básico</option>
-                        <option value="P-03">Personalizado</option>
-                    </optgroup>
-                    <optgroup label="Resto del año">
-                        <option value="TI-04">Todo incluído</option>
-                        <option value="B-05">Básico</option>
-                        <option value="P-06">Personalizado</option>
-                    </optgroup>
-                </select>
-                </div>
-
-                <p class="centrar">Salida desde</p>
-               <div class="centrar">
-                <input type="radio" name="ubi" id="madrid" value="madrid" required>
-                <label for="madrid">Madrid</label>
-                <input type="radio" name="ubi" id="salamanca" value="salamanca">
-                <label for="salamanca">Salamanca</label>
-                <input type="radio" name="ubi" id="barna" value="barcelona">
-                <label for="barna">Barcelona</label>
-            </fieldset>
-        </div>
             <fieldset class="centrar cond">
                 <legend><label for="isOK">Acepto las <a href="#con">condiciones*</a></label>
-                <input type="checkbox" name="isOK" id="isOK" required></legend>
-            </fieldset>   
+                    <input type="checkbox" name="isOK" id="isOK" required></legend>
+            </fieldset>
             <div class="centrar">
-            <button type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
-            <button type="reset">Borrar <i class="fas fa-eraser"></i></button>
-        </div>
-        </form>
-    </article>
-    <small id="con"> *Condiciones: La información y datos que Ud. nos proporcione voluntariamente a través del Sitio Web se
+                <button type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
+                <button type="reset">Borrar <i class="fas fa-eraser"></i></button>
+            </div>
+            
+        </article>
+        <small id="con"> *Condiciones: La información y datos que Ud. nos proporcione voluntariamente a través del Sitio
+            Web se
             incluirán en una base de datos que quedará bajo la responsabilidad de Viajes oH-Lalá, con el
             objetivo de
             proporcionarle un servicio personalizado y a la altura de sus necesidades, mejorando el canal de
@@ -117,20 +117,20 @@
             del envío de mensajes de acuerdo con el procedimiento que más adelante se indica. Viajes oH-Lalá no puede
             garantizar que la información transmitida a través del Sitio Web se encuentre completamente segura,
             con lo cual Ud. asume este riesgo, que declara conocer y aceptar.</small>
-    <footer class="footer_inicio centrar">
+        <footer class="footer_inicio centrar">
             <a href="#inicio" title="inicio"><i class="fas fa-arrow-circle-up"></i></a>
         </footer>
+    </section>
     </main>
     <footer class="footer">
-            <address id="hcard-Marta-Valdés" class="vcard">
-                    <a href="./index.html" rel="tag"><img src="./assets/logo.png" alt="logo"
-                        class="logo"></a>
-                <div class="org">&copy; <span>Viajes oH-Lalá</span> </div>
-                <a class="email"
-                    href="mailto:marta.valdes.azcarraga@tajamar365.com">marta.valdes.azcarraga@tajamar365.com</a>
-    
-            </address>
-        </footer>
+        <address id="hcard-Marta-Valdés" class="vcard">
+            <a href="./index.html" rel="tag"><img src="./assets/logo.png" alt="logo" class="logo"></a>
+            <div class="org">&copy; <span>Viajes oH-Lalá</span> </div>
+            <a class="email"
+                href="mailto:marta.valdes.azcarraga@tajamar365.com">marta.valdes.azcarraga@tajamar365.com</a>
+
+        </address>
+    </footer>
 </body>
 
-</html> -->
+</html>
