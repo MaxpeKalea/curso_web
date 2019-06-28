@@ -7,6 +7,9 @@
 // En JS tenemos objetos literales
 // basados en la notacion JSON
 
+// EN JS UN OBJETO ES UN CONJUNTO DE PROPIEDADES O ATRIBUTOS
+// En otros lenguajes un objeto es un conjunto de propiedades o atributos que se ajusta a una determinada clase (28 6 16 50)
+
 
 
 let p1 = {
