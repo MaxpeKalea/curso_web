@@ -1,11 +1,12 @@
+
     const aDatos = ['perro', 'gato']
     aDatos.length
 
-    // Implementadas como inmutables:
+    // Implementadas como inmutables
     console.log(aDatos.concat(['leon', 'tigre']))
     console.log(aDatos)
 
-    // Implementadas como mutables:
+    // Implementadas com mutables
     aDatos.sort()
     console.log(aDatos)
 
