@@ -1,32 +1,62 @@
 'use strict'
 
-/** function eliminar
- * @description: eliminar de un array nombres que empiecen por una letra determinada
+/**
+ * @description: devuelve un array eliminando los nombres que empiecen por una letra determinada del array que recibe
+ * @param: {string}: letra 
  * @param: {array}: aNombres
- * @param: {string}: letra
- * @returns: {array}
+ * @returns {array} 
  */
 
-// 17:50 // bucles ya
-
+// 17:50 // 
 function limpiarArray(letra = '', aNombres = []) {
-    for (let i = 0; i < aNombres.length; i++) {
-        const item = aNombres[i];
+    const datos = aNombres.slice()
+    for (let i = 0; i < datos.length; i++) {
+        const item = datos[i];
         if (item[0].toLowerCase() === letra.toLowerCase()) {
-            aNombres.splice(i, 1)
-        }
-    }  
-}
+            datos.splice(i, 1)
+            i--
+        }   
+    }
+    return datos
+ }
+
+ let l = 'r'
+ let aUsuarios = ['rosa', 'raquel', 'elena', 'renata', 'maria', 'roberto', 'ramon']
+ 
+ console.log(limpiarArray(l, aUsuarios))
+ console.log(aUsuarios)
 
 //18:50:
 
+// PARÁMETROS y ELEMENTALES
+
 function algo(h) {
-    h = h*h
+    h = h * h
+    return h // 16
 }
 
 let z = 4
 algo(z)
+console.log(z)
+
 
 // 19:00:
+
+
+// PARAMETROS y REFERENCIAS
+
+
+function cuadrados(a) {
+    for (let i = 0; i < a.length; i++) {
+        a[i] =  a[i] * a[i]
+    }
+    return a // [1, 4, 9]
+}
+
+let x = [1, 2, 3]
+cuadrados(x)
+console.log(x)
+
+
 
 

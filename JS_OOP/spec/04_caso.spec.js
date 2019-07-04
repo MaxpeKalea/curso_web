@@ -1,4 +1,4 @@
-let {comprobarCaso, mostrarComprobacionCaso} = require('../04_caso.js')
+let {comprobarCaso, mostrarComprobacionCaso} = require('../03/04_caso.js')
 
 describe('funcion comprobarCaso', () => {
     it('should be 0 if all MAY', () => {
