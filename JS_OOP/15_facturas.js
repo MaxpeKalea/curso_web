@@ -58,3 +58,5 @@ let factura = {
         console.log(total)
     },
 }
+
+
