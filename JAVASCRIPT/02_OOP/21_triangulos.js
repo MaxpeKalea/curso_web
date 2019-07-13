@@ -1,53 +1,67 @@
-
-// Función constructora de objetos triángulos
- 
-/**Funcion triangulos
- * @property{number}lado1
- * @property{number}lado2
- * @property{number}lado3
- * @methodgetLados
- * @methodgetPerimetro
- * @methodgetTipo
-*/
- 
-function Triangulo(lado1,lado2,lado3) {
-    this._lado1 = lado1
-    this._lado2 = lado2
-    this._lado3 = lado3
+function Triangulo (lados, ...rest ) {
+    this._lados = (Array.isArray(lados) && lados.length === 3) 
+        ? lados : [lados].concat(rest)
+    if ( this._lados.length !== 3) { 
+        throw new Error('Número de lados inválido')
+    }  
 }
 
+// Triangulo.prototype.tipos = ['Equilátero', 'Isosceles', 'Escaleno']
+Triangulo.tipos = ['Equilátero', 'Isosceles', 'Escaleno']
+Triangulo.definir = function () {
+    console.log('Polígono de tres lados')
+}
 Triangulo.prototype.getLados = function () {
-    return this   
+    console.log(this, 'Perimetro: ' + this.getPerimetro(), this.getTipo())
 }
-
 Triangulo.prototype.getPerimetro = function () {
-    return this._lado1 + this._lado2 + this._lado3 
+    return this._lados.reduce( (a,b) => a + b)
 }
-
 Triangulo.prototype.getTipo = function () {
- 
-if(lado1==lado2 & lado2==lado3) {
-return `equilatero`
- } else if(lado1!==lado2 & lado2!==lado3 & lado1!==lado3) {
-return `escaleno`
- } else{
-return `isosceles`
- }
-}
- 
-Triangulo.prototype.mostrar = function() {
-    const cadena = `
-    Lado 1: ${this._lado1}
-    Lado 2: ${this._lado2}
-    Lado 3: ${this._lado3}
-    Perímetro: ${this.getPerimetro}
-    Tipo: ${this.getTipo}
-    `
-    console.log(cadena)
+    let tipo = 1
+    if (this._lados[0] === this._lados[1] && 
+        this._lados[0] === this._lados[2] ) { 
+            tipo = 0
+    } else if (this._lados[0] !== this._lados[1] && 
+                this._lados[0] !== this._lados[2] &&
+                this._lados[1] !== this._lados[2]) { 
+                    tipo = 2
+    }
+    // return this.tipos[tipo]
+    return Triangulo.tipos[tipo]
 }
 
-const t = new Triangulo (6, 6, 6)  
-Triangulo.prototype.mostrar()
-Triangulo.prototype.getLados()
-Triangulo.prototype.getPerimetro()
-console.log(Triangulo(6, 6, 6))
+try {
+    new Triangulo(3, 3, 3).getLados()
+    new Triangulo(2, 4, 7).getLados()
+    new Triangulo([3, 3, 6]).getLados()
+    new Triangulo([3, 3]).getLados()    
+} catch (error) {
+    console.log(error.message)
+}
+
+
+let t = new Triangulo([3, 3, 7])
+console.log(t)
+console.log(t.getPerimetro())
+console.log(t.getTipo())
+console.log(Triangulo.definir())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

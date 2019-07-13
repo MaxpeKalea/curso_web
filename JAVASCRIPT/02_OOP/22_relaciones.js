@@ -7,11 +7,11 @@ function Direccion(calle,numero,localidad) {
 function Persona(nombre,edad,direccion)  {
     this.nombre = nombre
     this.edad = edad
-    this.direccion = direccion
+    this.direccion = direccion // Asociación (atributos)
     this.mascotas = []
 }
 
-Persona.prototype.adoptarMascota() = function(mascota) {
+Persona.prototype.adoptarMascota = function(mascota) {
     this.mascotas.push(mascota)
 }
 

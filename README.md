@@ -1,4 +1,5 @@
-# Curso Web Tajamar 2019
+# curso_web_2009
+Curso Web Tajamar 2019
 
 ## JS ##
 
@@ -6,64 +7,80 @@
 
 'use strict'
 
-#### Datos ####
+#### Datos ##### 
 
--Indefinidos:
-    undefine
--Primitivos
-    number
-    string
-    boolean
--Referenciados:
-    objects 
-        - Array 
-        - Date 
-        - Error 
-        - RegExp 
-        - Math 
-        - JSON 
-        - Function
+- Indefinidos: 
+    - undefine
+- Primitivos
+    - number
+    - string
+    - boolean
+- Referenciados: 
+    - objects
+            - Array
+            - Date
+            - Error
+            - RegExp
+            - Math
+            - JSON
+            - Function
 
 #### Variables y constantes ####
 
 Tipo: débiles (implícitos al valor) y dinámicos
 
-Variables 
+Variables
+    - Ciclo de vida: 
+        declaración & inicialización : asignación
 
-    - Ciclo de vida: declaración & inicialización : asignación
-
-Ámbito 
-    - global 
+Ámbito
+    - global
     - local 
         - al bloque => let / const -ES6- let y const son siempre locales al bloque en el que se declaran
         - a la función => var
 
-Constantes 
+Constantes
+    - Ciclo de vida: declaración + inicialización 
 
-    - Ciclo de vida: declaración + inicialización
+Constantes referenciadas -> es constante la referencia
 
-Constantes referenciadas -> es constante la referencia */
+```JS
+let x = {}
+let y
+y = x // Dos referencias la mismo objeto
+```
+El paso de parametros referenciads 
+solo pasa a la referencia
+
+```JS
+function algo(obj) { obj.nombre = 'Pepe'}
+algo(x)
+```
 
 Hoisting de funciones declaradas y variables var (solo la declaración)
 
-Casting
-
+#### Casting #### 
+ 
 Cambio de tipo temporal durante una operación
 
 Casting a string
 
-    let n = 23
-    let msg = 'Juan tiene ' + n // 'Juan tiene 23'
-    console.log(typeof n)
+```JS 
+let n = 23
+let msg = 'Juan tiene ' + n // 'Juan tiene 23'
+console.log(typeof n)
+```
 
 Casting a number
 
-    let indice = '34'
-    let incremento = indice * 0.10
+```JS 
+let indice = '34'
+let incremento = indice * 0.10
+```
 
 Casting a boolean
 
-Falsy:
+Falsy: 
 
     - false
     - undefined
@@ -72,36 +89,51 @@ Falsy:
     - NaN
     - ''
 
-Truly 
-
-    - true 
-    - 23 
-    - 
-    - 34 
-    - ' ' 
-    - 'Pepe' 
-    - {} 
+Truly
+    - true
+    - 23
+    - -34
+    - ' '
+    - 'Pepe'
+    - {}
     - []
 
 Operadores
 
-    Aritméticos: + - * / % **
+Asignación: =, +=, ...
+Aritméticos: + - * / % **
+    Unarios: +, -, ++, --
+De bits: ^(XOR)
+Relacionales: == , !=, ===, !==, >, <, <=, >=
+Operadores lógicos: && (y) || (o)
 
-Ejercicios
+#### Ejercicios ####
 
-    Funciones aritmeticas básicas / función de renderizacion
-    Casting (07_casting.js) - control básico de entrada de "operables"
-    Comprobar edad (08_booleans.js - 09_errores.js)
-    Control de entrada de "operables" y control de errores
-    Comprobar paridad (10_pares.js - 11_pares_try.js)
-    Testing con jasmine
+- Funciones aritmeticas básicas / función de renderizacion
+- Casting (07_casting.js) - control básico de entrada de "operables" 
+- Comprobar edad (08_booleans.js - 09_errores.js)
+    - Control de entrada de "operables" y control de errores
+- Comprobar paridad (10_pares.js - 11_pares_try.js)
+    - Testing con jasmine
+
+### JS Core - continuación ###
+
+Estructuras de control
+
+- if
+    switch / case
+
+- for
+    for (const key in array / object)
+    for (const iterator of array /string) 
+    do / while
+    while
+
+#### Ejercicios ####
+
+- Multiplos (02_multiplos.js)
+- Funciones aritmeticas básicas con gestión de errores (03_calculos.js)
+- Suma de cuadrados (04_funciones.js)
+- Recorres objetos recursivo (06_recorrer_objetos)
 
 
-JS Core - continuación
-
-Ejercicios
-
-    Multiplos (02_multiplos.js)
-    Funciones aritmeticas básicas con gestión de errores (03_calculos.js)
-    Suma de cuadrados (04_funciones.js)
-    Recorres objetos recursivo (06_recorrer_objetos)
