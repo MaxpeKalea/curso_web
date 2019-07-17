@@ -123,6 +123,8 @@ Estructuras de control
 - if
     switch / case
 
+- try / catch    
+
 - for
     for (const key in array / object)
     for (const iterator of array /string) 
