@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+header {
+    color: palevioletred;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: 2rem;
+    min-height: 60vh;
+}
+
+main h2 {
+    margin-bottom: 0;
+}
+
+h2 {
+    text-align: center;
+    color: pink;
+}
+
+dialog {
+    border: none;
+    background-color: pink;
+    color: rgb(84, 93, 219);
+}
+
+
+footer {
+    min-height: 10vh;
+ 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
