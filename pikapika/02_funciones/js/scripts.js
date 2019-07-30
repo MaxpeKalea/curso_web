@@ -1,5 +1,14 @@
 'use strict'
 
+/**
+ * function**
+ * 
+ * document.write**
+ * 
+ * condicional if**
+ * 
+ */
+
 function saludar() {
     document.write('hola')
 }

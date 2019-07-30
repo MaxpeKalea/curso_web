@@ -1,5 +1,17 @@
 'use strict'
 
+/**
+ * document**
+ * 
+ * querySelector**
+ * 
+ * selector(#)**
+ * 
+ * template strings**
+ * 
+ * innerHTML**
+ */
+
 const nombre= 'Marta',
     curso='Javascript';
 
