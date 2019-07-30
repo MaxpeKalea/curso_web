@@ -1,10 +1,16 @@
 'use strict'
 
 /**
- * parseInt para que sea un numero
- * ventanas emergentes: promt(pido usuario introduzca texto) y alert(solo mostrar mi texto)
- * condicional if/else if
+ * parseInt**  para que sea un number
+ * 
+ * ventanas emergentes:** promt(pido usuario introduzca texto) y alert(solo mostrar mi texto)
+ * 
+ * bucle while** (si no se cumplen mis condiciones, crea un bucle hasta que se cumplan las condiciones que quiero)
+ * 
+ * condicional if/else if** (que hacer con cada condicion posible)
+ * 
  */
+
 
 let a=parseInt(prompt('Introduce el primer número',0));
 
