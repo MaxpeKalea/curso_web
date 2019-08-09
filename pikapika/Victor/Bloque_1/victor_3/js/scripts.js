@@ -1,5 +1,9 @@
 'use strict'
 
+/** Hacer un programa que muestre todos los numeros 
+ * entre dos numeros
+ * introducidos por el usuario
+ */
 
 let numero1=parseInt(prompt('introduce numero1',0))
 let numero2=parseInt(prompt('introduce numero2',0))

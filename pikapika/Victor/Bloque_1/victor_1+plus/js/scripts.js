@@ -1,6 +1,13 @@
 'use strict'
 
 /**
+ * Programa que pida dos numeros,
+ * devuelva cual mayor, cual menor o si son iguales
+ * */
+
+
+
+/**
  * parseInt**  para que sea un number
  * 
  * ventanas emergentes:** promt(pido usuario introduzca texto) y alert(solo mostrar mi texto)
