@@ -1,7 +1,7 @@
 // es una referencia que se utiliza en la mayoria de los lenguajes para que un elemento hable de si mismo
 
 // 4 formas de ejecutar un funcion
-// patrone de invocación
+// patrones de invocación
 // cambian el significado de this
 
 function algo () {

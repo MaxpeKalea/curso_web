@@ -19,9 +19,9 @@
             bisiesto() {
                 let año = this.añoRef;
                 if ((año % 400 == 0) || (año % 4 == 0) && año % 100 != 0) {
-                    return true;
+                    return `El año ${año} es bisiesto`;
                 } else {
-                    return false;
+                    return `El año ${año} no es bisiesto`;
                 }
             },
             semanaSanta() {
@@ -78,13 +78,15 @@
                     día = 18;
                     mes = 4;
                 }
-                return new Date(año, mes - 1, día);
+                let semanaSanta= new Date(año, mes - 1, día)
+                let opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                return `Fecha de Semana Santa: ${semanaSanta.toLocaleDateString('es-ES', opciones)}`;
             },
             díaNavidad() {
 
                 const nombreDía = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
                 let navidad = new Date(this.añoRef, 11, 25);
-                return nombreDía[navidad.getDay()];
+                return `En ${this.añoRef}, Navidad cae en ${nombreDía[navidad.getDay()]}`;
 
 
             }
