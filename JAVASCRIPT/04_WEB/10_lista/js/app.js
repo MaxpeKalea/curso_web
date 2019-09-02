@@ -1,6 +1,6 @@
 import { ArrayStorage } from './storage.js'
 
-export class App {
+export class App {  // da igual class o function
 
     constructor() {
         console.log('Cargada app') 
