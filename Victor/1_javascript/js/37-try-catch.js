@@ -6,5 +6,5 @@ try{
 
 }catch(error){
 	console.log(error)
-	alert("A ocurrido un error en el código");
+	alert("Ha ocurrido un error en el código");
 }
