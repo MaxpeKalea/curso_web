@@ -1,1 +1,0 @@
-crear una lista dinamica

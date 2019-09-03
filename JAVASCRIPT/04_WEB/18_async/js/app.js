@@ -35,6 +35,7 @@ export function app() {  // da igual function o class
         http.addEventListener('readystatechange', leerDatos)  // cuando el servidor me avise de un cambio de estado (tiene 4 estados y el cuarto es cuando ha terminado la carga +info en apuntes)
         http.open('GET', url ) // abre la conexion, sus parametos son(metodo,url) (que, de donde)
         http.send() // manda los datos, sus parametos son(metodo,url) (que, a donde)
+        // open y send conviene utilizarlos despues de onreadystatechange
         
     }
 

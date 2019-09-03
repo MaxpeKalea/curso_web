@@ -1,3 +1,7 @@
+Informacion sobre AJAX y las propiedades de XMLHttpRequest (incluye status):
+
+https://www.youtube.com/watch?v=EEV4ik9arIU
+
 
 ¿Que es una API?
 
