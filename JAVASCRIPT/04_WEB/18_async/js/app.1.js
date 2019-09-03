@@ -26,7 +26,8 @@ export function app() {
 
 
     function leerDatos(http) {
-        if (http.readyState == 4 && http.status == 200) {
+        if (http.readyState == 4) {
+            if (http.status == 200) {
             let data = JSON.parse(http.responseText) 
                 spanSaludo.innerHTML =  data.username
         } else {
@@ -34,6 +35,7 @@ export function app() {
             spanSaludo.innerHTML = ', datos no encontrados'
             //location.assign('./error.html')
         }
+    }
     }
 
     function ajax(metodo, url, callback) {   // creamos una funcion ajax para no tener que repetir estos pasos constantemente y en su lugar invocar esta funcion
