@@ -39,4 +39,7 @@ y crea esa base en la carpeta que estuviese indicada en el terminal
 pego en ella mi   "users": [{"id":0, "nombre": "Pepe", "edad": 33}], 
 
 
+no cerrar terminal node, abrir powershell nuevo
+
+
 
