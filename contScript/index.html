@@ -1,48 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Continentes</title>
+    <link rel="stylesheet" href="./css/style.css">
     <script src="./js/app.js" type="module"></script>
 </head>
 <body>
-  <script>
-    function getPaises(elSelect){
-
-console.log(elSelect.value)
-let url = 'http://restcountries.eu/rest/v2/region/'
-fetch(url+elSelect.value)
-.then(function(response) {
-  return response.json();
-})
-.then(function(myJson) {
-  myJson.forEach(item => { 
-        var paisLi = document.createElement("li");
-         paisLi.className = 'pais_li'
-         paisLi.value = item.name
-         paisLi.text = `
-     <li>
-          ${item.name} 
-     </li>`
-         paisLi = paisLi.text 
-         paises.prepend(paisLi)
-         console.log(paisLi)
-  })
-});
-}
-</script>
-    <select onchange="getPaises(this)">
-        <option value="">Selecciona Region</option>
-        <option value="Africa">Africa</option>
-        <option value="Americas">Americas</option>
-        <option value="Asia">Asia</option>
-        <option value="Europe">Europe</option>
-        <option value="Oceania">Oceania</option>
-      </select>
-      <div>
-          <ul id="paises"></ul>
-      </div>
+        <body>
+                <div class='content'>
+                    <select id='regions'>
+                        <option>Selecciona un continente:</option>
+                        <option value='Americas'>Americas</option>
+                        <option value='Asia'>Asia</option>
+                        <option value='Europe'>Europe</option>
+                        <option value='Oceania'>Oceania</option>
+                        <option value='Polar'>Polar</option>
+                    </select>
+            
+            
+                    <div id='results' style='margin-top: 32px'>
+                        <h3 id='selected-region'></h3>
+                        <ul id='founded-countries'></ul>
+                    </div>
+                </div>
+            
+    
 </body>
 </html>

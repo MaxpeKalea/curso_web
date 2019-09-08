@@ -11,10 +11,10 @@ fetch(url+elSelect.value)
 return response.json();
 })
 .then(function(myJson) {
+
 myJson.forEach(item => { 
-    var paisLi = document.createElement("li");
-     paisLi.className = 'pais_li'
-     paisLi.value = item.name
+    
+    let paisLi = document.createElement("li");
      paisLi.text = `
  <li>
       ${item.name} 
