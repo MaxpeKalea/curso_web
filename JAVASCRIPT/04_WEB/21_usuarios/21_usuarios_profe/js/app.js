@@ -5,7 +5,6 @@ export function app() {
     let aUsers = []
     let userActual = {} 
     getDatos()
-
     // Nodos del DOM
     let aInputs = document.querySelectorAll('input')
     let btnAdd = document.querySelector('#btn-add')
