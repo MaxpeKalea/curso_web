@@ -4,54 +4,54 @@ export function app() {
     // Existe un elemento #out-lista
       
     // Nodos
-    let inAnimal = document.querySelector('#in-new')
-    let outAnimal = document.querySelector('#out-lista')
+    let inTarea = document.querySelector('#in-new')
+    let outTarea = document.querySelector('#out-lista')
     let dlgConfirmar = document.querySelector('.confirmacion')
     let aDlgBotones = document.querySelectorAll('.confirmacion button')
 
     // Asignar manejador de eventos
-    inAnimal.addEventListener('change', addAnimal)
+    inTarea.addEventListener('change', addTarea)
     aDlgBotones.forEach(btn => 
         btn.addEventListener('click', onClickDlg))
 
 
     // Crear e inicializar el array
-    let animales = [] 
+    let tareas = [] 
     // ¿Existe storage?
-    if(localStorage.getItem('zoo')) {
-        animales = JSON.parse(localStorage.getItem('zoo'))
+    if(localStorage.getItem('todas las tareas')) {
+        tareas = JSON.parse(localStorage.getItem('todas las tareas'))
         render()
     }
     
     // Elemento a Bornar
     let numBorrar
 
-    // let animales = (localStorage.getItem(animales)) ?
-    //        localStorage.getItem(animales) : [] 
+    // let tareas = (localStorage.getItem(tareas)) ?
+    //        localStorage.getItem(tareas) : [] 
 
     // Funciones
-    function addAnimal() {
-        animales.push(inAnimal.value)
-        inAnimal.value = ''
+    function addTarea() {
+        tareas.push(inTarea.value)
+        inTarea.value = ''
         save()
         render()
     }
 
     function save() {
-        localStorage.setItem('zoo', JSON.stringify(animales))
+        localStorage.setItem('todas las tareas', JSON.stringify(tareas))
     }
     
     function render() {
         let html = '' 
         html += '<ul>'
-        animales.forEach((item, i) => html += 
+        tareas.forEach((item, i) => html += 
             `<li>
                 <span class="texto" data-id="${i}">${item}</span>
                 <span class="btn btn-editar" data-id="${i}">️✍️</span>  
                 <span class="btn btn-borrar" data-id="${i}">🗑️</span>
             </li>`)
         html += '</ul>'
-        outAnimal.innerHTML = html
+        outTarea.innerHTML = html
 
         let aBtnBorrar = document.querySelectorAll('.btn-borrar')
         let aBtnEditar = document.querySelectorAll('.btn-editar')
@@ -69,7 +69,7 @@ export function app() {
 
    function onClickDlg (ev) {
        if (ev.target.textContent === 'SI') {
-        animales.splice(numBorrar, 1)
+        tareas.splice(numBorrar, 1)
         save()
         render()     
        }
@@ -84,7 +84,7 @@ export function app() {
 
    function onChange(ev) {
     ev.target.contentEditable = false
-    animales.splice(
+    tareas.splice(
         ev.target.dataset.id, 1, ev.target.textContent)
     save()
     render()
