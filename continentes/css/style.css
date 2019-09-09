@@ -1,0 +1,22 @@
+
+    
+    div {
+        padding: 2.5%;
+    }
+    input,
+    select {
+        border-radius: 5px;
+        padding      : 9px;
+    }
+    select {
+        width: 100%
+    }
+
+    .elDiv1 {
+        margin: 5% auto;
+        width : 80%;
+    }
+    .elDiv1 div {
+        border-radius: 9px;
+        border       : 2px solid grey;
+    }
