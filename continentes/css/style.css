@@ -12,11 +12,11 @@
         width: 100%
     }
 
-    .content {
+    .elDiv1 {
         margin: 5% auto;
         width : 80%;
     }
-    .content div {
+    .elDiv1 div {
         border-radius: 9px;
         border       : 2px solid grey;
     }

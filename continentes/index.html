@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Continentes</title>
+    <link rel="stylesheet" href="./css/style.css">
     <script src="./js/app.js" type="module"></script>
 </head>
 <body>
-    <select>
-        <option value="">Selecciona Region</option>
-        <option value="Africa">Africa</option>
-        <option value="Americas">Americas</option>
-        <option value="Asia">Asia</option>
-        <option value="Europe">Europe</option>
-        <option value="Oceania">Oceania</option>
-      </select>
-      <div>
-          <ul id="paises"></ul>
-      </div>
+        <body>
+                <div class='elDiv1'>
+                    <select id='continentes'>
+                        <option>Selecciona un continente:</option>
+                        <option value='Americas'>Americas</option>
+                        <option value='Asia'>Asia</option>
+                        <option value='Europe'>Europe</option>
+                        <option value='Oceania'>Oceania</option>
+                        <option value='Polar'>Polar</option>
+                    </select>
+            
+            
+                    <div id='resultados' style='margin-top: 32px'>
+                        <h3 id='el-continente'></h3>
+                        <ul id='sus-paises'></ul>
+                    </div>
+                </div>
+            
+    
 </body>
 </html>

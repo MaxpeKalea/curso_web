@@ -1,1 +1,0 @@
-export const APIPAISES = 'https://restcountries.eu/rest/v2/all'
