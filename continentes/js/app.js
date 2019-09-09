@@ -1,232 +1,246 @@
-document.querySelector('#continentes').addEventListener('change', quePaises);
+document.querySelector('#continentes').addEventListener('change', quePaises);  
 
-document.getElementById('pais').innerHTML = pais;
+document.getElementById('pais').innerHTML = pais;  
 
+ 
+ 
+ 
 
+function quePaises() {  
 
+ 
+ 
 
+ 
+ 
 
-function quePaises() {
+let elSelect = document.getElementById('continentes');  
 
+ 
+ 
 
+ 
+ 
 
+let continente = elSelect.options[elSelect.selectedIndex].value;  
 
+ 
+ 
 
+ 
+ 
 
+let url = 'https://restcountries.eu/rest/v2/all';  
 
-    let elSelect = document.getElementById('continentes');
+ 
+ 
+ 
+ 
 
+ 
+ 
 
+fetch(url)  
 
+ 
+ 
 
+ 
+ 
 
+.then(data => data.json())  
 
+ 
+ 
 
-    let continente = elSelect.options[elSelect.selectedIndex].value;
+ 
+ 
 
+.then(data => {  
 
+ 
+ 
 
+ 
+ 
 
+let paises = data;  
 
+ 
+ 
 
+ 
+ 
 
-    let url = 'https://restcountries.eu/rest/v2/all';
+let aPaises = [];  
 
+ 
+ 
 
+ 
+ 
 
+paises.forEach(item => {  
 
+ 
+ 
 
+ 
+ 
 
+if (item.region == continente) {  
 
+ 
+ 
 
+let paisOption = document.createElement('option');  
 
-    fetch(url)
+paisOption.value = item.name  
 
+paisOption.text = item.name  
 
+pais.prepend(paisOption)  
 
+aPaises.push(`Nombre: ${item.name}/${item.nativeName} -- Capital: ${item.capital} -- Bandera: <img src="${item.flag}" style="max-width: 5%"> -- Población: ${item.population} --`);  
 
+ 
+ 
 
+ 
+ 
 
+}  
 
-        .then(data => data.json())
+ 
+ 
 
+ 
+ 
 
+});  
 
+ 
+ 
 
+ 
+ 
 
+if (aPaises.length > 0) {  
 
+ 
+ 
 
-        .then(data => {
+ 
+ 
 
+renderPaises(aPaises, continente);  
 
+ 
+ 
 
+ 
+ 
 
+}  
 
+ 
+ 
 
+ 
+ 
 
-            let paises = data;
+});  
 
+ 
+ 
 
+ 
+ 
 
+}  
 
+ 
+ 
 
+ 
+ 
 
+function renderPaises(paises, continente) {  
 
-            let aPaises = [];
+ 
+ 
 
+ 
+ 
 
+let cabecera = 'Hay ' + paises.length  
 
+ 
+ 
 
+ 
+ 
 
++ ' países en "' + continente + '"';  
 
+ 
+ 
 
-            paises.forEach(item => {
+ 
+ 
 
+let html = '';  
 
+ 
+ 
 
+ 
+ 
 
+paises.forEach(item => {  
 
+ 
+ 
 
+ 
+ 
 
-                if (item.region == continente) {
+html += '<li>' + item + '</li>';  
 
+ 
+ 
 
+ 
+ 
 
+});  
 
-                    let paisOption = document.createElement('option');
+ 
+ 
 
-                    paisOption.value = item.name
+ 
+ 
 
-                    paisOption.text = item.name
+document.getElementById('el-continente').innerHTML = cabecera;  
 
-                    pais.prepend(paisOption)
+ 
+ 
 
-                    aPaises.push(`Nombre: ${item.name}/${item.nativeName} -- Capital: ${item.capital} -- Bandera: <img src="${item.flag}" style="max-width: 5%"> -- Población: ${item.population} --`);
+ 
+ 
 
+document.getElementById('sus-paises').innerHTML = html;  
 
+ 
+ 
 
+ 
+ 
 
+ 
+ 
+ 
 
+} 
 
-
-                }
-
-
-
-
-
-
-
-            });
-
-
-
-
-
-
-
-            if (aPaises.length > 0) {
-
-
-
-
-
-
-
-                renderPaises(aPaises, continente);
-
-
-
-
-
-
-
-            }
-
-
-
-
-
-
-
-        });
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-function renderPaises(paises, continente) {
-
-
-
-
-
-
-
-    let cabecera = 'Hay ' + paises.length
-
-
-
-
-
-
-
-        + ' países en "' + continente + '"';
-
-
-
-
-
-
-
-    let html = '';
-
-
-
-
-
-
-
-    paises.forEach(item => {
-
-
-
-
-
-
-
-        html += '<li>' + item + '</li>';
-
-
-
-
-
-
-
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
+ 
