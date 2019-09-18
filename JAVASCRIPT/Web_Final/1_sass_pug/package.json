@@ -1,0 +1,24 @@
+{
+  "name": "26_sass",
+  "version": "1.0.0",
+  "description": "Ejemplos del uso de SASS",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass sass/:css/ --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:w": "sass sass/:dist/css/ --watch --no-source-map",
+    "pug:w": "pug -w -P -p ./pug/partials -O ./pug/options.json ./pug/templates -o ./dist",
+    "pug:sass": "parallelshell \"npm run pug:w\" \"npm run sass:w\"",
+    "ugly": "uglifyjs js/app.js -o dist/js/app.js -c -m"
+  },
+  "keywords": [],
+  "author": "Alejandro Cerezo",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "parallelshell": "3.0.1",
+    "pug": "^2.0.3",
+    "sass": "^1.22.12",
+    "uglify-js": "^3.6.0"
+  }
+}
