@@ -8,3 +8,6 @@ heroku  pruebas gratuitas con aplicaciones
 
 firebase  backs ya hechos (claves de usuarios y progreso del juego, por ejemplo)
 
+
+
+20,09  17:01  gitlab repositorio privado en servidor
